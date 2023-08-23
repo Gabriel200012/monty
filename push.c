@@ -8,9 +8,9 @@
  */
 
 void push_stack(stack_t **stack, int n){
-	stack_t *new_code = malloc(sizeof(stack_t));
+	stack_t *new_node = malloc(sizeof(stack_t));
 	if (new_node == NULL){
-		fprint(stderr, "Memory allocation error\n")
+		fprintf(stderr, "Memory allocation error\n")
 			exit(EXIT_FAILURE);
 	}
 	new_node->n = n;
